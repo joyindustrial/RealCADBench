@@ -18,32 +18,32 @@ Results from Tables 4 and 5 of the [paper](https://arxiv.org/abs/2609.03773). Ro
 
 Each component is macro-averaged across the four input regimes. Regime-balanced PA is the macro-average of the four regime-specific PAs. Solid IoU, Surface IoU, and Judge are conditional on evaluator-available artifacts and should be read together with executability (Exec.). See Appendix Tables 7–10 of the paper for regime-specific results.
 
-| Rank | Model | Regime-balanced PA ↑ | Exec. ↑ | Solid IoU (cond.) ↑ | Surface IoU (cond.) ↑ | Judge (cond.) ↑ |
-| ---: | :--- | ---: | ---: | ---: | ---: | ---: |
-| 1 | Gemini 3.1 Pro Preview | **0.5507** | 0.8825 | 0.4291 | 0.1578 | 73.33 |
-| 2 | GPT-5.5 | 0.5478 | **0.9311** | 0.3829 | 0.1393 | 73.79 |
-| 3 | Claude Opus 4.8 | 0.5316 | 0.8922 | 0.4080 | 0.1433 | 68.31 |
-| 4 | GPT-5.4 | 0.4814 | 0.8005 | 0.3795 | 0.1337 | 61.19 |
-| 5 | Qwen3.8-27B | 0.4575 | 0.7961 | 0.3585 | 0.1126 | 56.30 |
-| 6 | Kimi K3 | 0.4195 | 0.3422 | 0.4481 | 0.1657 | 72.23 |
-| 7 | Doubao Seed 2.0 Pro | 0.3842 | 0.4315 | 0.3767 | 0.1328 | 59.57 |
-| 8 | Qwen3-VL-32B | 0.2902 | 0.3322 | 0.2885 | 0.0995 | 44.07 |
-| 9 | Qwen3-VL-8B | 0.2309 | 0.2100 | 0.2833 | 0.0885 | 34.19 |
+| Model | Regime-balanced PA ↑ | Exec. ↑ | Solid IoU (cond.) ↑ | Surface IoU (cond.) ↑ | Judge (cond.) ↑ |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Gemini 3.1 Pro Preview | **0.5507** | 0.8825 | 0.4291 | 0.1578 | 73.33 |
+| GPT-5.5 | 0.5478 | **0.9311** | 0.3829 | 0.1393 | 73.79 |
+| Claude Opus 4.8 | 0.5316 | 0.8922 | 0.4080 | 0.1433 | 68.31 |
+| GPT-5.4 | 0.4814 | 0.8005 | 0.3795 | 0.1337 | 61.19 |
+| Qwen3.8-27B | 0.4575 | 0.7961 | 0.3585 | 0.1126 | 56.30 |
+| Kimi K3 | 0.4195 | 0.3422 | 0.4481 | 0.1657 | 72.23 |
+| Doubao Seed 2.0 Pro | 0.3842 | 0.4315 | 0.3767 | 0.1328 | 59.57 |
+| Qwen3-VL-32B | 0.2902 | 0.3322 | 0.2885 | 0.0995 | 44.07 |
+| Qwen3-VL-8B | 0.2309 | 0.2100 | 0.2833 | 0.0885 | 34.19 |
 
 ### Assembly Track: RCB-Assm25
 
 RCB-Assm25 is the 25-task stratified study used for all reported assembly comparisons. Executability uses all 25 tasks. Solid IoU, Surface IoU, and Judge are conditional on evaluator-available artifacts and should be read together with Exec. Judge is reported on a 0–100 scale. Entries with Codex or Claude Code evaluate the model together with its agent harness.
 
-| Rank | Model / System | PA ↑ | Exec. ↑ | Solid IoU (cond.) ↑ | Surface IoU (cond.) ↑ | Judge (cond.) ↑ |
-| ---: | :--- | ---: | ---: | ---: | ---: | ---: |
-| 1 | Codex + GPT-5.5 | **0.5228** | **1.0000** | 0.2817 | 0.1161 | 69.35 |
-| 2 | GPT-5.4 | 0.5028 | **1.0000** | 0.2366 | 0.1046 | 66.98 |
-| 3 | GPT-5.5 | 0.4777 | 0.8400 | 0.2103 | 0.0971 | 76.33 |
-| 4 | Gemini 3.1 Pro Preview | 0.4724 | 0.9200 | 0.2306 | 0.0979 | 64.10 |
-| 5 | Claude Code + Claude Opus 4.8 | 0.4644 | 0.8800 | 0.2732 | 0.0864 | 61.80 |
-| 6 | Claude Opus 4.8 | 0.4638 | 0.8800 | 0.2670 | 0.1058 | 60.24 |
-| 7 | Kimi K3 | 0.4338 | 0.7200 | 0.2665 | 0.1039 | 64.48 |
-| 8 | Doubao Seed 2.0 Pro | 0.3389 | 0.5200 | 0.1632 | 0.0969 | 57.56 |
+| Model / System | PA ↑ | Exec. ↑ | Solid IoU (cond.) ↑ | Surface IoU (cond.) ↑ | Judge (cond.) ↑ |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Codex + GPT-5.5 | **0.5228** | **1.0000** | 0.2817 | 0.1161 | 69.35 |
+| GPT-5.4 | 0.5028 | **1.0000** | 0.2366 | 0.1046 | 66.98 |
+| GPT-5.5 | 0.4777 | 0.8400 | 0.2103 | 0.0971 | 76.33 |
+| Gemini 3.1 Pro Preview | 0.4724 | 0.9200 | 0.2306 | 0.0979 | 64.10 |
+| Claude Code + Claude Opus 4.8 | 0.4644 | 0.8800 | 0.2732 | 0.0864 | 61.80 |
+| Claude Opus 4.8 | 0.4638 | 0.8800 | 0.2670 | 0.1058 | 60.24 |
+| Kimi K3 | 0.4338 | 0.7200 | 0.2665 | 0.1039 | 64.48 |
+| Doubao Seed 2.0 Pro | 0.3389 | 0.5200 | 0.1632 | 0.0969 | 57.56 |
 
 ## Continuous Evolution
 
